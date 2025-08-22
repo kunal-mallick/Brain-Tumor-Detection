@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data/data_ingestion.py
+    deps:
+    - path: src/data/data_ingestion.py
+      hash: md5
+      md5: ca888c05da4dd02e9ebc770c441292e1
+      size: 981
+    outs:
+    - path: data/raw/train.zip
+      hash: md5
+      md5: 45cc38f047131ca38372275c8fb86957
+      size: 3261169789
+    - path: data/raw/val.zip
+      hash: md5
+      md5: 8c77fd803ddfc3d04caf6891090e24d8
+      size: 1207290780
